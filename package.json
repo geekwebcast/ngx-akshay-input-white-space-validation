@@ -1,11 +1,13 @@
 {
   "name": "ngx-akshay-input-white-space-validation-app",
-  "version": "0.0.0", 
+  "version": "1.0.0",
   "description": "Angular input white soace validation.",
   "keywords": [
     "angular",
-    "input","space",
-    "white space validation","input space validation",
+    "input",
+    "space",
+    "white space validation",
+    "input space validation",
     "validation"
   ],
   "repository": {
