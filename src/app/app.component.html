@@ -1,0 +1,14 @@
+<form #f="ngForm" novalidate>
+  <input type="text" [(ngModel)]="firstName" #firstName="ngModel" whiteSpaceValidator name='firstName' required
+    placeholder="First Name">
+  <span class="error-block" *ngIf="(firstName.errors?.required ||firstName.errors?.whiteSpaceValidator?.valid) && firstName.touched">
+    *First Name is required
+  </span>
+  <input type="text" [(ngModel)]="email" #email="ngModel" name="email" required placeholder="Enter your email ID" email>
+  <p *ngIf="email.errors?.required && email.touched">
+    *Please enter a valid email.
+  </p>
+  <p *ngIf="email.errors?.email && email.touched && !email.errors?.required">
+    *Please enter a valid email.
+  </p>
+</form>
