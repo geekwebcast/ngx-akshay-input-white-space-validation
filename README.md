@@ -51,6 +51,7 @@ Once your library is imported, you can use its components in your Angular applic
 <form #f="ngForm" novalidate>
   <input type="text" [(ngModel)]="firstName" #firstName="ngModel" whiteSpaceValidator name='firstName' required
     placeholder="First Name">
+  // checking and validatting input white space
   <span class="error-block" *ngIf="(firstName.errors?.required ||firstName.errors?.whiteSpaceValidator?.valid) && firstName.touched">
     *First Name is required
   </span>
